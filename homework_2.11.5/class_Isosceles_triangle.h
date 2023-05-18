@@ -1,5 +1,5 @@
 #pragma once
-#include "class_Triangle.h";
+#include "class_Triangle.h"
 
 class Isosceles_triangle : public Triangle
 {

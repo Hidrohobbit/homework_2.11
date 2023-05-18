@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Bybr\Desktop\Netology\git_work\homework_2.11\Class_Leaver_dll;C:\Users\Bybr\Desktop\Netology\git_work\homework_2.11\Class_Greeter;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Class_Leaver_dll;..\Class_Greeter;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,15 +128,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\homework_2.11.1\main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Class_Greeter\Class_Greeter.vcxproj">
       <Project>{a0109691-418f-4bb6-a85e-e15beab33342}</Project>
     </ProjectReference>
     <ProjectReference Include="..\Class_Leaver_dll\Class_Leaver_dll.vcxproj">
       <Project>{10cd67da-10ff-4de4-bb97-4a4351c36c3a}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
